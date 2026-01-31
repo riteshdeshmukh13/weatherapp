@@ -35,7 +35,7 @@ body{
     border-radius: 30px;
     flex: 1;
     margin-right: 16px;
-    font-size: 18px
+    font-size: 18px;
 }
 .search button{
     border: 0;
@@ -82,4 +82,7 @@ body{
 .humidity, .wind{
     font-size: 28px;
     margin-top: -6px;
+}
+.weather{
+    display: none;
 }
