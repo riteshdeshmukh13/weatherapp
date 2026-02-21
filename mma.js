@@ -7,8 +7,7 @@ render the response
 const cityElement = document.querySelector("input")
 const button = document.querySelector("button")
 
-
-button.addEventListener("click", async function(){
+async function getReport(){
     if (cityElement.value == ""){
         alert("Please enter the city")
         return
@@ -31,5 +30,17 @@ button.addEventListener("click", async function(){
     wind.innerHTML = report["wind"]["speed"]
     const weather = document.querySelector(".weather")
     weather.style.display = "block"
+    
+
+}
+
+button.addEventListener("click",getReport)
+cityElement.addEventListener("keydown",function(event){
+    if(event.key == "Enter"){
+        getReport();
+    }
+
 })
+    
+
 
